@@ -4,21 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Stereo Entertainment</title>
+
+    <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <header>
-      <img src="static/images/bannerlong.png"></img>
+        <img src="static/images/icon.png" class="headericon"></img>
+
+        <nav class="nav-buttons">
+            <button onclick="homeRedir()">Home</button>
+            <button>Games</button>
+            <button onclick="ourteamRedir()">Our Team</button>
+            <button onclick="socialsRedir()">Socials</button>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Under Construction</h2>
-            <p>be quiet</p>
-        </section>
-    </main>
+        <div class="banner-container">
+            <img src="static/images/bannerlong.png" alt="Stereo Entertainment Banner" class="banner-img" fetchpriority="high"></img>
+        </div>
 
+        <div class="wrap">
+            <section>
+                <div class="card">
+                    <h1 style="text-align: center">Stereo Entertainment</h1>
+                    <hr>
+                    <br>
+
+                    <h3 style="text-align: center">A very stereo game studio.</h3>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <p>
+                        heyo! we're a game studio focused on making silly little games for you to play! whether those be one-time games or games you play in your freetime, we just want to make games!
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
     <footer>
-        <p>&copy; 2026 Stereo Entertainment. All rights reserved.</p>
+        <div class="card">
+            <p>&copy; 2026 Stereo Entertainment. All rights reserved.</p>
+        </div>
     </footer>
 </body>
+    <script src="static/scripts/redirs.js"></script>
 </html>

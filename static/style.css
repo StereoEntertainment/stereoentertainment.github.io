@@ -1,0 +1,233 @@
+:root {
+    --bg: #000000;
+    --bg2: rgb(30,30,30);
+    --card: rgb(82, 31, 195);
+    --card2: rgba(82, 31, 195, 0.25);
+    --cardorange: rgb(255,154,0);
+    --cardorange2: rgb(255,93,0);
+    --text: #7e50ce;
+    --muted: #5e3b99;
+    --muted2: #8f98a6;
+    --line: rgba(255, 255, 255, .12);
+    --line2: rgba(255, 255, 255, .08);
+    --lineorange: rgba(255,154,0, .12);
+    --lineorange2: rgba(255,93,0, .08);
+    --radius: 16px
+}
+
+body {
+    background-color: black;
+    color: #7e50ce;
+    font-family: Outfit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--bg2);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    font-family: Outfit;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color: var(--muted);
+    transition: transform 0.2s ease;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+header button:hover {
+    color: var(--text);
+    transform: scale(1.2);
+}
+
+.banner-container {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--text);
+}
+
+hr {
+    color: var(--muted);
+}
+
+.headericon {
+    width: 32px;
+    height: 32px;
+}
+
+.wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 22px 16px 54px
+}
+
+.card {
+    background: linear-gradient(
+            135deg,
+            rgba(82, 31, 195, 0.15) 0%,
+            rgba(82, 31, 195, 0.05) 40%,
+            rgba(82, 31, 195, 0.08) 100%
+    );
+
+    border: 1px solid rgba(126, 80, 206, 0.2);
+    border-bottom-color: rgba(39, 15, 93, 0.05);
+    border-right-color: rgba(39, 15, 93, 0.05);
+
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+    box-shadow:
+            inset 0 1px 0 rgba(126, 80, 206, 0.2),
+            inset 0 -1px 0 rgba(82, 31, 195, 0.1),
+            0 8px 32px rgba(39, 15, 93, 0.3);
+
+    border-radius: var(--radius);
+    padding: 18px 16px;
+}
+
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(82, 31, 195, .84)
+}
+
+.card p {
+    margin: 0;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.65
+}
+
+.card.alt {
+    background: var(--card2)
+}
+
+.card.hero img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 14px;
+    border: 1px solid var(--line2);
+    max-width: 100%;
+    height: auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.team-member {
+    padding: 1rem;
+    height: 100%;
+}
+
+.team-member h3{
+    text-align: center;
+    font-size: initial;
+    color: var(--text);
+}
+
+.grid3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    background: linear-gradient(
+            135deg,
+            rgba(82, 31, 195, 0.15) 0%,
+            rgba(82, 31, 195, 0.05) 40%,
+            rgba(82, 31, 195, 0.08) 100%
+    );
+
+    border: 1px solid rgba(126, 80, 206, 0.2);
+    border-bottom-color: rgba(39, 15, 93, 0.05);
+    border-right-color: rgba(39, 15, 93, 0.05);
+
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+    box-shadow:
+            inset 0 1px 0 rgba(126, 80, 206, 0.2),
+            inset 0 -1px 0 rgba(82, 31, 195, 0.1),
+            0 8px 32px rgba(39, 15, 93, 0.3);
+
+    border-radius: var(--radius);
+    padding: 18px 16px;
+
+    transition: transform 0.2s ease;
+    transform: scale(0.9);
+}
+
+.box:hover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    background: linear-gradient(
+            135deg,
+            rgba(132, 81, 245, 0.15) 0%,
+            rgba(132, 81, 245, 0.05) 40%,
+            rgba(132, 81, 245, 0.08) 100%
+    );
+
+    border: 1px solid rgba(176, 130, 256, 0.2);
+    border-bottom-color: rgba(89, 65, 143, 0.05);
+    border-right-color: rgba(89, 65, 143, 0.05);
+
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+    box-shadow:
+            inset 0 1px 0 rgba(176, 130, 256, 0.2),
+            inset 0 -1px 0 rgba(132, 81, 245, 0.1),
+            0 8px 32px rgba(89, 65, 143, 0.3);
+
+    border-radius: var(--radius);
+    padding: 18px 16px;
+
+    transform: scale(1.0);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
