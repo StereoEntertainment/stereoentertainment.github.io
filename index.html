@@ -10,11 +10,13 @@
 </head>
 <body>
     <header>
-        <img src="static/images/icon.png" class="headericon"></img>
+        <div class="headericon-wrap">
+            <img src="static/images/icon.png" class="headericon"></img>
+        </div>
 
         <nav class="nav-buttons">
             <button onclick="homeRedir()">Home</button>
-            <button>Games</button>
+            <button onclick="gamesRedir()">Games</button>
             <button onclick="ourteamRedir()">Our Team</button>
             <button onclick="socialsRedir()">Socials</button>
         </nav>
@@ -51,5 +53,21 @@
         </div>
     </footer>
 </body>
-    <script src="static/scripts/redirs.js"></script>
+    <script>
+        function homeRedir() {
+            location.href = "index.html";
+        }
+
+        function ourteamRedir() {
+            location.href = "pages/ourteam.html";
+        }
+
+        function socialsRedir() {
+            location.href = "pages/socials.html";
+        }
+
+        function gamesRedir() {
+            location.href = "pages/games.html";
+        }
+    </script>
 </html>

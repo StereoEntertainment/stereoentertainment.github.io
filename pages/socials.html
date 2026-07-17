@@ -10,11 +10,13 @@
 </head>
 <body>
 <header>
-    <img src="../static/images/icon.png" class="headericon"></img>
+    <div class="headericon-wrap">
+        <img src="../static/images/icon.png" class="headericon"></img>
+    </div>
 
     <nav class="nav-buttons">
         <button onclick="homeRedir()">Home</button>
-        <button>Games</button>
+        <button onclick="gamesRedir()">Games</button>
         <button onclick="ourteamRedir()">Our Team</button>
         <button onclick="socialsRedir()">Socials</button>
     </nav>
@@ -31,9 +33,25 @@
                 <h1 style="text-align: center">Socials</h1>
                 <hr>
 
-                <div class="grid3x3">
+                <div class="grid5x5">
                     <button class="box" onclick="discordRedir()">
                         <img src="../static/images/socials/discord.png" alt="discord">
+                    </button>
+
+                    <button class="box" onclick="youtubeRedir()">
+                        <img src="../static/images/socials/youtube.png" alt="discord">
+                    </button>
+
+                    <button class="box" onclick="itchRedir()">
+                        <img src="../static/images/socials/itchio.png" alt="discord">
+                    </button>
+
+                    <button class="box" onclick="steamRedir()">
+                        <img src="../static/images/socials/steam.webp" alt="discord">
+                    </button>
+
+                    <button class="box" onclick="githubRedir()">
+                        <img src="../static/images/socials/github.png" alt="discord">
                     </button>
                 </div>
             </div>
@@ -46,5 +64,41 @@
     </div>
 </footer>
 </body>
-<script src="static/scripts/redirs.js"></script>
+<script>
+    function homeRedir() {
+        location.href = "../index.html";
+    }
+
+    function ourteamRedir() {
+        location.href = "ourteam.html";
+    }
+
+    function socialsRedir() {
+        location.href = "socials.html";
+    }
+
+    function gamesRedir() {
+        location.href = "games.html";
+    }
+
+    function discordRedir() {
+        window.location.href = "https://discord.gg/HgT5sWJQBh";
+    }
+
+    function youtubeRedir() {
+        window.location.href = "https://www.youtube.com/@StereoEntertainmentStudio";
+    }
+
+    function itchRedir() {
+        window.location.href = "https://stereoentertainment.itch.io/";
+    }
+
+    function steamRedir() {
+        window.location.href = "https://store.steampowered.com/curator/46213072/";
+    }
+
+    function githubRedir() {
+        window.location.href = "https://github.com/StereoEntertainment";
+    }
+</script>
 </html>

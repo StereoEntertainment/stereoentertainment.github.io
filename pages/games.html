@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | Stereo Entertainment</title>
+
+    <link rel="icon" type="image/x-icon" href="../static/images/icon.png">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header>
+    <div class="headericon-wrap">
+        <img src="../static/images/icon.png" class="headericon"></img>
+    </div>
+
+    <nav class="nav-buttons">
+        <button onclick="homeRedir()">Home</button>
+        <button onclick="gamesRedir()">Games</button>
+        <button onclick="ourteamRedir()">Our Team</button>
+        <button onclick="socialsRedir()">Socials</button>
+    </nav>
+</header>
+
+<main>
+    <div class="banner-container">
+        <img src="../static/images/bannerlong.png" alt="Stereo Entertainment Banner" class="banner-img">
+    </div>
+
+    <div class="wrap">
+        <section>
+            <div class="card">
+                <h1 style="text-align: center">Games</h1>
+                <hr>
+
+                <div class="grid3x3">
+                    <button class="box game" onclick="inverterRedir()">
+                        <div class="imgdivgamething">
+                            <img src="../static/images/games/inverter.png"></img>
+                        </div>
+
+                        <br>
+
+                        <h1>Inverter</h1>
+
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="card">
+        <p>&copy; 2026 Stereo Entertainment. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+<script>
+    function homeRedir() {
+        location.href = "../index.html";
+    }
+
+    function ourteamRedir() {
+        location.href = "ourteam.html";
+    }
+
+    function socialsRedir() {
+        location.href = "socials.html";
+    }
+
+    function gamesRedir() {
+        location.href = "games.html";
+    }
+
+    function inverterRedir() {
+        window.location.href = "https://darkcookiesf.itch.io/inverter";
+    }
+</script>
+</html>
