@@ -93,7 +93,7 @@ hr {
     width: 32px;
     height: 32px;
     transition: transform 0.2s ease;
-    animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
 }
 
 .headericon-wrap {
